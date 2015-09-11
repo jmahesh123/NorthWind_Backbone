@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <title>Customer Order Application</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    <script type="text/javascript" data-main="js/app/app" src="js/lib/require/require.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <span class="app_title">Northwind</span>
+            </div>
+            <div class="navmenu buttons">
+                <ul>
+                    <li ng-class='{active: selected==1}'><a href="#employees">Employees</a></li>
+                    <li class="nav_separator"><img src="img/nav_separator.png" width="3" height="29" alt=""></li>
+                    <li ng-class='{active: selected==2}'><a href="#customers">Customers</a></li>
+                    <li class="nav_separator"><img src="img/nav_separator.png" width="3" height="29" alt=""></li>
+                    <li ng-class='{active: selected==3}'><a href="#products">Products</a></li>
+                    <li class="nav_separator"><img src="img/nav_separator.png" width="3" height="29" alt=""></li>
+                    <li ng-class='{active: selected==4}'><a href="#orders">Orders</a></li>
+                    <li class="nav_separator"><img src="img/nav_separator.png" width="3" height="29" alt=""></li>
+                    <li ng-class='{active: selected==5}'><a href="#suppliers">Supplier</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="view-container">
+            <div class="searchContainer">
+                <span class="searchBox"><input type="text" ng-model="query" placeholder="Search"></span>
+            </div>
+            <div class="view-frame"></div>
+        </div>
+        <!--<div class="overlay" ng-show="showOverlay"></div>-->
+        <div id="map-canvas"></div>
+    </div>
+</body>
+</html>
